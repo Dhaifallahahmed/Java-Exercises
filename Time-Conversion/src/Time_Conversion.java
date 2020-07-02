@@ -1,7 +1,12 @@
-import java.util.Arrays;
+/*
+ * <h1> Time Conversion <h1>
+ * <p>Simply this program takes a time in AM/PM format, convert it to military ( 24-hour) time.<p>
+ * 
+ * */
+
 import java.util.Scanner;
 
-public class TimeConversion {
+public class Time_Conversion {
 
 	public static void main(String[] args) {
 		
@@ -25,17 +30,15 @@ public class TimeConversion {
 		String[] pm = {pmam.substring(0, mid),pmam.substring(mid)};
 		//pm[0] is for seconds
 		//pm[1] is for pm / am 	part
-		//Comparing part starts here:
-		String pmam1=pm[1];
-		//if(hr<=23 && hr>=0)
-		//{
-			//System.out.println("COOL!!!");
-			//System.out.println("Hours:"+hr);
-		String pm1="pm";
-		String pm2="PM";
-		String am1="am";
-		String am2="AM";
-			if(hr>12)
+		
+			String pmam1=pm[1];
+			String pm1="pm";
+			String pm2="PM";
+			String am1="am";
+			String am2="AM";
+			
+			//check if the given time is already in a 24 hour format:
+				if(hr>12)
 			System.out.println(hrs+":"+mm+":"+pm[0]);
 		else
 				if( pm[1].equals(pm1) || pm[1].equals(pm2) )
@@ -62,16 +65,10 @@ public class TimeConversion {
 					System.out.println(hrs+":"+mm+":"+pm[0]);
 					}
 				}
-			/*System.out.println("PM/AM ->"+pm[1]);
-			System.out.println("Seconds->"+pm[0]);
-			System.out.println("parts->");
-			System.out.println("Hours->"+parts[0]);
-			System.out.println("minutes->"+parts[1]);
-			System.out.println("Seconds and pm/am -> "+parts[2]);*/
+				
 			time1.close();
-		//}
-		//else 
-			//System.out.println("Wrong hour!!!");
+			
+			
 
 	}	
 }
