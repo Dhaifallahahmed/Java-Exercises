@@ -33,7 +33,7 @@ public class Circular_Array_Rotation {
 	{
 		
 	    Scanner in = new Scanner(System.in);
-	    
+	    int index1=0;
 	    //length of the array
 	    int n = in.nextInt();
 	    
@@ -42,8 +42,7 @@ public class Circular_Array_Rotation {
 	    
 	    //how many queries does the user wants to ask :
 	    int q = in.nextInt();
-	    
-	    
+
 	    //defining an array to store the numbers of the circular :
 	    int[] a = new int[n];
 	    
@@ -59,11 +58,13 @@ public class Circular_Array_Rotation {
 	       m[i]=in.nextInt();
 	       
 	    }  
-	    //print the value of the element at index j after rotating the array :
+	  //print the value of the element at the indexes the user inputed  after rotating the array :
 	    for(int j = 0; j < q; j++)
 	    {
-	    //print the value of the element at index j after implementing the query :
-	    System.out.println(a[(n - (k % n)+ m[j]) % n]);
+	    	//this integer is to calculate the index of rotated array
+	    	index1=(n - (k % n)+ m[j]) % n;
+	    	//print the value of the index "index1"
+	    	System.out.print(a[index1]+" ");
 	    }
 	}
 	}
