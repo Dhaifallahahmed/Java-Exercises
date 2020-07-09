@@ -7,6 +7,7 @@ public class Bank_Account {
 	private String email;
 	private String phone;
 	public Bank_Account() {
+		
 	}
 	//,String account_number,double balance,String email,String phone
 	public Bank_Account(String coustmername, String account_number, double balance, String email, String phone) {
