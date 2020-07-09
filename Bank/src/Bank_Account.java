@@ -7,27 +7,33 @@ public class Bank_Account {
 	private String email;
 	private String phone;
 	public Bank_Account() {
-		System.out.println("Enter Name : ");
 	}
 	//,String account_number,double balance,String email,String phone
 	public Bank_Account(String coustmername, String account_number, double balance, String email, String phone) {
 		
-		System.out.println("Constrctor WAS CALLED !!!");
 		this.account_number=account_number;
 		this.coustmername=coustmername;
 		this.balance=balance;
 		this.email=email;
 		this.phone=phone;
-		System.out.println("Account Number : "+ this.account_number
-							+"\nCoustmer Name : "+ this.coustmername+
-							"\nAccount Balance : "+ this.balance+
-							"\nCoustmer Email : "+ this.email+
-							"\nCoustmer Phone : "+ this.phone
-				);
-		
-		
+		System.out.println("==============================");
+		System.out.println("Account Number : "+	getAccount_number());
+		System.out.println("Coustmer Name : "+ getCoustmername());
+		System.out.println("Balance : "+ getBalance());
+		System.out.println("Email : "+getEmail());
+		System.out.println("Phone : "+getPhone());
+		System.out.println("==============================");		
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 	public String getAccount_number() {
 		return account_number;
 	}
@@ -40,18 +46,18 @@ public class Bank_Account {
 	public void setCoustmername(String coustmername) {
 		this.coustmername = coustmername;
 	}
-//	public float getBalance() {
-//		return balance;
-//	}
-//	public void setBalance(float balance) {
-//		this.balance = balance;
-//	}
-//	public void setEmail(String email) {
-//		this.email = email;
-//	}
-//	public void setPhone(String phone) {
-//		this.phone = phone;
-//	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	
 	
 	public void deposit(double amount) {

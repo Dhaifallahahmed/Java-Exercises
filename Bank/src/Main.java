@@ -6,20 +6,25 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		
-		System.out.println("Enter name :");
+		System.out.println("Enter Name :");
+		Scanner scan1=new Scanner(System.in);
 		Scanner scan=new Scanner(System.in);
 		String name=scan.nextLine();
-		System.out.println("Enter number: ");
+		System.out.println("Enter Account Number: ");
 		String number=scan.nextLine();
-//		System.out.println("Enter Balance :");
-//		double balance=scan.nextDouble();
+		System.out.println("Enter Balance :");
+		double balance=scan1.nextDouble();
 		System.out.println("Enter Email :");
 		String email=scan.nextLine();
 		System.out.println("Enter Phone :");
 		String phone=scan.nextLine();
 		
 
-		Bank_Account myAccount2=new Bank_Account(name,number,435.4,email,phone);
+		Bank_Account myAccount=new Bank_Account(name,number,balance,email,phone);
+		myAccount.getAccount_number();
+		myAccount.getBalance();
+		myAccount.getCoustmername();
+		
 		
 	}
 
