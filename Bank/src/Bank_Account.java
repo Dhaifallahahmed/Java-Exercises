@@ -1,6 +1,32 @@
 import java.io.ObjectInputStream.GetField;
 
 public class Bank_Account {
+	private String account_number;
+	private String coustmername;
+	private double balance;
+	private String email;
+	private String phone;
+	public Bank_Account() {
+		System.out.println("Enter Name : ");
+	}
+	//,String account_number,double balance,String email,String phone
+	public Bank_Account(String coustmername, String account_number, double balance, String email, String phone) {
+		
+		System.out.println("Constrctor WAS CALLED !!!");
+		this.account_number=account_number;
+		this.coustmername=coustmername;
+		this.balance=balance;
+		this.email=email;
+		this.phone=phone;
+		System.out.println("Account Number : "+ this.account_number
+							+"\nCoustmer Name : "+ this.coustmername+
+							"\nAccount Balance : "+ this.balance+
+							"\nCoustmer Email : "+ this.email+
+							"\nCoustmer Phone : "+ this.phone
+				);
+		
+		
+	}
 	
 	public String getAccount_number() {
 		return account_number;
@@ -14,23 +40,19 @@ public class Bank_Account {
 	public void setCoustmername(String coustmername) {
 		this.coustmername = coustmername;
 	}
-	public float getBalance() {
-		return balance;
-	}
-	public void setBalance(float balance) {
-		this.balance = balance;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	private String account_number;
-	private String coustmername;
-	private float balance;
-	private String email;
-	private String phone;
+//	public float getBalance() {
+//		return balance;
+//	}
+//	public void setBalance(float balance) {
+//		this.balance = balance;
+//	}
+//	public void setEmail(String email) {
+//		this.email = email;
+//	}
+//	public void setPhone(String phone) {
+//		this.phone = phone;
+//	}
+	
 	
 	public void deposit(double amount) {
 		this.balance+=amount;
