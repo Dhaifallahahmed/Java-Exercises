@@ -20,12 +20,29 @@ public class Dog extends Animal {
 		this.coat=coat;
 		
 	}
+	public void chew() {
+		System.out.println("Dog.chew was called !");
+	}
+	public void walk() {
+		System.out.println("Dog.walk was called !");
+		move(5);
+	}
+	public void run() {
+		System.out.println("Dog.run was called !");
+		super.move(10);
+	}
 
+	@Override
+	public void move(int speed) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Subclass method was called dog move at "+speed);
+	}
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
 		//override this method and add to it to test it:
-		System.out.println("Dog Eats method was called");
+		System.out.println("Dog.eat was called!");
 		//test animals eat method:
 		super.eat();
 	}

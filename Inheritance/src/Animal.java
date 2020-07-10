@@ -14,15 +14,15 @@ public class Animal {
 		this.body = body;
 		this.size = size;
 		this.weight = weight;
-		System.out.println("ANIMALS WAS CALLED!!");
 	}
 	//Random method for Animal class:
 	public void eat() {
-		System.out.println(name+" Eats !");
+		System.out.println("Animal.eat wass called !");
 		
 	}
 	//Another Random method for Animal class:
-	public void move() {
+	public void move(int speed) {
+		System.out.println("ANimal was moving at "+speed);
 		
 	}
 	//Get Methods for Animal's fields:
