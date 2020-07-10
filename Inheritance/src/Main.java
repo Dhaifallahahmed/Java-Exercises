@@ -51,14 +51,13 @@ public class Main {
 			System.out.println("===========================================");
 		Dog dog=new	Dog(dogname[i], size[i], weight[i], eyes[i], legs[i], tail[i], teeth[i],coat[i]);
 			System.out.println(dog.getName());
-//			Animal animal= new Animal(dogname[i], brain[i], body[i], size[i], weight[i]);
-//			System.out.println(animal.getName());
+
 			System.out.println(dog.getBody());
 			System.out.println(dog.getBrain());
-			dog.getName();
-			dog.getName();
-			dog.getName();
+			//test dog's eat method:
 			dog.eat();
+			
+		
 			System.out.println(dog.getCoat());
 			System.out.println(dog.getEyes());
 			System.out.println(dog.getLegs());

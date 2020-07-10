@@ -21,6 +21,15 @@ public class Dog extends Animal {
 		
 	}
 
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		//override this method and add to it to test it:
+		System.out.println("Dog Eats method was called");
+		//test animals eat method:
+		super.eat();
+	}
+
 	public int getEyes() {
 		return eyes;
 	}
