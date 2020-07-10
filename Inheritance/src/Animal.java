@@ -18,6 +18,7 @@ public class Animal {
 	}
 	//Random method for Animal class:
 	public void eat() {
+		System.out.println(name+" Eats !");
 		
 	}
 	//Another Random method for Animal class:
@@ -40,6 +41,7 @@ public class Animal {
 	public int getWeight() {
 		return weight;
 	}
+	
 	
 	
 
