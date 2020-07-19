@@ -19,10 +19,13 @@ public class Main {
 		Bubble bubble=new Bubble();
 		//Insertion Sorting:
 		Insertion insertion=new Insertion();
+		//Quick Sort;
+		Quick quick=new Quick();
 		System.out.println("Choose algorthim :\n"
 				+ "1. Selection Sorting \n"
 				+ "2. Bubble Sorting \n"
-				+ "3. Insertion Sorting");
+				+ "3. Insertion Sorting \n"
+				+ "4. Quick Sorting \n");
 		int method=scanner.nextInt();
 		System.out.println("the sorted array : ");
 		switch (method) {
@@ -35,6 +38,8 @@ public class Main {
 		case 3:
 			insertion.sort(arr);
 			break;
+		case 4:
+			quick.sort(arr, 0, arr.length-1);
 		default:
 			break;
 		}
