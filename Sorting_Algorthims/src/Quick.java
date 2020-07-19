@@ -25,10 +25,13 @@ public class Quick {
 		sort(arr, start, pivot-1);
 		sort(arr, pivot+1, end);
 		}
+		
+	}
+	public void print(int []arr) {
 		//Printing the sorted array
-		for ( int k = 0; k < 4; k++) 
-			{
-				System.out.println(arr[k]);
-			}
+				for ( int k = 0; k <arr.length; k++) 
+					{
+						System.out.println(arr[k]);
+					}
 	}
 }

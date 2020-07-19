@@ -40,6 +40,8 @@ public class Main {
 			break;
 		case 4:
 			quick.sort(arr, 0, arr.length-1);
+			quick.print(arr);
+			break;
 		default:
 			break;
 		}
