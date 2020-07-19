@@ -17,9 +17,12 @@ public class Main {
 		Selection_Sorting selection_Sorting=new Selection_Sorting();
 		//Bubble Sorting :
 		Bubble bubble=new Bubble();
+		//Insertion Sorting:
+		Insertion insertion=new Insertion();
 		System.out.println("Choose algorthim :\n"
 				+ "1. Selection Sorting \n"
-				+ "2. Bubble Sorting \n");
+				+ "2. Bubble Sorting \n"
+				+ "3. Insertion Sorting");
 		int method=scanner.nextInt();
 		System.out.println("the sorted array : ");
 		switch (method) {
@@ -29,7 +32,9 @@ public class Main {
 		case 2:
 			bubble.sort(arr);
 			break;
-
+		case 3:
+			insertion.sort(arr);
+			break;
 		default:
 			break;
 		}
